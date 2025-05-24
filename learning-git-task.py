@@ -1,10 +1,12 @@
-# Lista zakupów z podziałem na sklepy
+# Tworzenie słownika z listą zakupów
 lista_zakupow = {
-    "Warzywniak": ["Pomidor", "Ogórek", "Marchew", "Ziemniaki"],
-    "Mięsny": ["Kurczak", "Wołowina", "Wieprzowina", "Kiełbasa"],
-    "Rybny": ["Łosoś", "Dorsz", "Makrela", "Tuńczyk"]
+    "warzywniak": ["pomidor", "ogórek", "marchew", "ziemniaki"],
+    "mięsny": ["kurczak", "wołowina", "wieprzowina", "kiełbasa"],
+    "rybny": ["łosoś", "dorsz", "makrela", "tuńczyk"]
 }
 
-# Wyświetlanie listy zakupów
+# Iteracja po słowniku i wypisywanie formatowanego tekstu
 for sklep, produkty in lista_zakupow.items():
-    print(f"{sklep}: {', '.join(produkty)}")
+    sklep_wielka_litera = sklep.capitalize()  # Pierwsza litera wielka
+    produkty_wielka_litera = ", ".join([produkt.capitalize() for produkt in produkty])  # Każdy produkt z wielką literą
+    print(f"Idę do {sklep_wielka_litera} i kupuję tam {produkty_wielka_litera}.")
