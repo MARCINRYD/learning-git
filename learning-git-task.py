@@ -1,12 +1,17 @@
-# Tworzenie słownika z listą zakupów
-lista_zakupow = {
+# Słownik z listą zakupów
+shopping_list = {
     "warzywniak": ["pomidor", "ogórek", "marchew", "ziemniaki"],
     "mięsny": ["kurczak", "wołowina", "wieprzowina", "kiełbasa"],
     "rybny": ["łosoś", "dorsz", "makrela", "tuńczyk"]
 }
 
-# Iteracja po słowniku i wypisywanie formatowanego tekstu
-for sklep, produkty in lista_zakupow.items():
-    sklep_wielka_litera = sklep.capitalize()  # Pierwsza litera wielka
-    produkty_wielka_litera = ", ".join([produkt.capitalize() for produkt in produkty])  # Każdy produkt z wielką literą
-    print(f"Idę do {sklep_wielka_litera} i kupuję tam {produkty_wielka_litera}.")
+# Iteracja po słowniku i wyświetlanie wiadomości
+total_products = 0
+for shop, products in shopping_list.items():
+    shop_capitalized = shop.capitalize()  # Wielka litera w nazwie sklepu
+    products_capitalized = ", ".join([product.capitalize() for product in products])  # Wielka litera w nazwie produktów
+    print(f"Idę do {shop_capitalized} i kupuję tam {products_capitalized}.")
+    total_products += len(products)
+
+# Wyświetlenie sumy produktów
+print(f"W sumie kupuję {total_products} produktów.")
