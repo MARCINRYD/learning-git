@@ -16,3 +16,4 @@ for shop, products in shopping_list.items():
 # Wyświetlenie sumy produktów
 print(f"W sumie kupuję {total_products} produktów.")
 print ("To jest koniec programu.")  # Komunikat końcowy
+print ("kłamałem") 
