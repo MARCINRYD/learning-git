@@ -15,5 +15,4 @@ for shop, products in shopping_list.items():
 
 # Wyświetlenie sumy produktów
 print(f"W sumie kupuję {total_products} produktów.")
-print ("To jest koniec programu.")  # Komunikat końcowy
-print ("kłamałem") 
+print("Pozdrawiam! Zaczynają się już konkretne zagadnienia. Mam pytanie dotyczące sposobu pisania komend—widzę, że wiele rzeczy w kursie jest pisanych w wierszu poleceń, a niektóre w Git Bash. Co wybrać? Na czym się skupić?")
